@@ -1,0 +1,5 @@
+server:
+  port: 8517
+spring:
+  profiles:
+    active: dev

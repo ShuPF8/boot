@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spf.mapper.user.TbUserMapper">
+
+	<resultMap id="BaseResultMap" type="com.spf.model.user.TbUser">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="age" property="age" />
+	</resultMap>
+
+	<select id="getUserByPage" resultMap="BaseResultMap">
+		select * from tb_user
+	</select>
+
+	<select id="getByName" resultType="com.spf.model.user.TbUser">
+		select * from tb_user where name =#{name}
+	</select>
+</mapper>
