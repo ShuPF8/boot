@@ -5,17 +5,17 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-  mvc:
-    throw-exception-if-no-handler-found: true
-    view:
-      prefix: /WEB-INF/view/
-      suffix: .html
-  resources:
-    add-mappings: false
-  thymeleaf:
-    prefix: /WEB-INF/view/
-    suffix: .html
-    cache: false
+#  mvc:
+#    throw-exception-if-no-handler-found: true
+#    view:
+#      prefix: /WEB-INF/view/
+#      suffix: .jsp
+#  resources:
+#    add-mappings: false
+#  thymeleaf:
+#    prefix: /WEB-INF/view/
+#    suffix: .html
+#    cache: false
 #  devtools:
 #    restart:
 #      additional-paths:
