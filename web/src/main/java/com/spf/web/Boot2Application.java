@@ -7,7 +7,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@MapperScan("com.spf.mapper.*")
+@MapperScan("com.spf.mapper")
 @SpringBootApplication(scanBasePackages = "com.spf.*")
 @EnableTransactionManagement
 public class Boot2Application extends SpringBootServletInitializer {
