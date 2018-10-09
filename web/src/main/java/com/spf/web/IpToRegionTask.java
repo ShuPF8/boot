@@ -45,7 +45,6 @@ public class IpToRegionTask {
     private List<SysUserLastOnline> userLastOnlines = null;
 
     // 初始化 userLastOnlines 查询 sys_user_last_online 所有没有区域数据的数据 {"code":1,"data":""}
-    @PostConstruct
     private void init() {
         userLastOnlines = ipToRegionService.findAll();
         Execute execute = new Execute();

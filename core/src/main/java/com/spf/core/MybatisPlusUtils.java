@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class MybatisPlusUtils {
 
-    private static final String [] tables =  new String[] { "tb_exception" };
+    private static final String [] tables =  new String[] { "lottery_detail" };
 
     private static boolean flag = false; //是否覆盖生产
 
@@ -75,7 +75,7 @@ public class MybatisPlusUtils {
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
-        dsc.setUrl("jdbc:mysql:///test?characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql:///lottery?characterEncoding=utf8");
         mpg.setDataSource(dsc);
 
         // 策略配置
